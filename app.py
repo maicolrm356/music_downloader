@@ -18,7 +18,9 @@ ydl_opts = {
     'postprocessors': [
         {  # Extract audio using ffmpeg
             'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'm4a',
+            # 'preferredcodec': 'm4a',
+            'preferredquality': '0',  # 0 = mejor calidad disponible
+            'preferredcodec': 'wav',
         },
         {
             'key': 'FFmpegMetadata',
