@@ -51,8 +51,8 @@ def contarFilasEnColumnas(sheet,columnas, filas):
         print(f"Columna {col} tiene {contador} filas con datos.")
     print(contador)
 
-def crearCarpetas(nombre_album):
-    path = "C:\musica"
+# def crearCarpetas(nombre_album):
+#     path = "C:\musica"
 
 
 # ingresar a la hoja de excel deseada
@@ -61,4 +61,24 @@ def crearCarpetas(nombre_album):
 # print(f"numero de filas: {sheet.max_row} \nnumero de columnas: {sheet.max_column}")
 
 # sheet.columns
-cargarExcelYaccederAHojaDeseada("./music.xlsx", "PXNDX")
+# cargarExcelYaccederAHojaDeseada("./music.xlsx", "PXNDX")
+
+
+# Carga el libro de trabajo
+try:
+    workbook = load_workbook('./music.xlsx')
+except FileNotFoundError:
+    print("El archivo no se encontró.")
+    exit()
+
+# Obtiene los nombres de las hojas en una lista
+sheet_names = workbook.sheetnames
+
+# Imprime los nombres de las hojas
+print(sheet_names)
+
+# Ejemplo de cómo iterar sobre las hojas
+for sheet_name in sheet_names:
+    print(f"Nombre de la hoja: {sheet_name}")
+    # Puedes realizar otras acciones con cada hoja aquí
+    # sheet = workbook[sheet_name]
