@@ -55,11 +55,6 @@ def descargar_albums(albums, artista):
         nombre_album = obtener_nombre_album(album)
         if "The Spaghetti Incident" in nombre_album:
             nombre_album = nombre_album.replace("?", "").strip()
-            
-        if "Guns N' Roses - Live Tokyo Dome | 1992/02/22 | (1080p 60FPS)" in nombre_album:
-            nombre_album = "Live Tokyo Dome  1992"
-            
-            
         path = f"{ruta_base}/{artista}/{nombre_album}"
         if crear_carpetas_de_albums(path):
             ydl_opts = {
