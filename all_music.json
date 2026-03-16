@@ -1,0 +1,76 @@
+{
+    "artistas": [
+        {
+            "nombre": "Guns N' Roses",
+            "albums": [
+                "https://music.youtube.com/playlist?list=OLAK5uy_ltQiuNnoBifeiEYSjm5Ac1Z-x3ydiYrq4",
+                "https://music.youtube.com/playlist?list=OLAK5uy_l_a_2vL6wjqa_JvHp-ZJjZDmoI3pHhBhM",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nmMRcBPEXxsWW5l7T5kYIDH8WG5Hrd1v0",
+                "https://music.youtube.com/playlist?list=OLAK5uy_niWwBZzVmo7rEL2WwKOIArwgbBmLBjB64",
+                "https://music.youtube.com/playlist?list=OLAK5uy_llbiwWjwlRC6554PAK85FIRT10WsgIWlY",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lwKwguxJSAvoH4l1fruQIIJjp4Eeod37U",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lGBK0LgMwE5DbbS6r3U31rUzfU9IZrFtw",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nGSVnT8Dd85NFcqrFWHGbEBzgKT6uV6m0",
+                "https://music.youtube.com/playlist?list=OLAK5uy_n4q5YXrgrCOE_aKIU94xFaK4_gUyQXOwM",
+                "https://music.youtube.com/playlist?list=OLAK5uy_kR3a6Ut6q75_atAr91EwmIOudmhQPXR58"
+            ]
+        },
+        {
+            "nombre": "José Madero",
+            "albums": [
+                "https://music.youtube.com/playlist?list=OLAK5uy_mcG6TLnKjtmNoYoyWe897MKDprkx6jUq8",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nbOz6vsjw4AhhRDe2lJqUX9FHL--7aED4",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lK9ESskv-obONZ4sXfJuKLCiLgXPvDPVo",
+                "https://music.youtube.com/playlist?list=OLAK5uy_k4aBqYyA8yQthZg6j-HTY3lBkTzadAoF0",
+                "https://music.youtube.com/playlist?list=OLAK5uy_n_G1V7Zzv0d-03tlF2yO8qwVy8c4WkffM",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lwlo7ycyhhirJ4joLwK0IN_E8qh9xAwlA",
+                "https://music.youtube.com/playlist?list=OLAK5uy_k8gIstLfzbrXSUx9SMdGITRCaxXob_cC8"
+            ]
+        },
+        {
+            "nombre": "Led Zeppelin",
+            "albums": [
+                "https://music.youtube.com/playlist?list=OLAK5uy_lRA5p-MDC4R3Kf1P9klvr0Q632ad4KGPg",
+                "https://music.youtube.com/playlist?list=OLAK5uy_khw2e8ccNETRJ2Too92JY1g706ioozSfs",
+                "https://music.youtube.com/playlist?list=OLAK5uy_myknz_P4NL6gCh7eixdDY1RefSrQEHZik",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lfBlhBZMlaqZCHE5LR-kEo7kIrB4QWCDw",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lGQF0wFfqfFkG_sTpOeJR9cSwJIo_JOx8",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lzZvS4QYhfLUAS-jJV_rtQwalwEh9CYPQ",
+                "https://music.youtube.com/playlist?list=OLAK5uy_klD6_m7gON427mZv81iZiDtujEjvR9IAk",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nXBkfUrDF3y0NS6xdCm_fpGQgPaThkQKE",
+                "https://music.youtube.com/playlist?list=OLAK5uy_na4MzAClFFEttejQCqpFZRlKLQBzY-tBE"
+            ]
+        },
+        {
+            "nombre": "Pink Floyd",
+            "albums": [
+                "https://music.youtube.com/playlist?list=OLAK5uy_lrCrcAdxFG4aMzMrebs7o9TU384xyF240",
+                "https://music.youtube.com/playlist?list=OLAK5uy_klU9jB4SMO5SqEyFazPAVbDek2j0JVQxY",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nCBf4OZxhktV5fD5m1MSPW-MT5Q5X1M3Y",
+                "https://music.youtube.com/playlist?list=OLAK5uy_n-lE02j8pQkwGhsL5JLAPvbBAoAmxh9n8",
+                "https://music.youtube.com/playlist?list=OLAK5uy_loKmzl_a690GUTO3O3irATW-Q60Czk9BI",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nM82AUr-l5OxTITeZBbC6MqZpk9JxD_OE"
+            ]
+        },
+        {
+            "nombre": "Metallica",
+            "albums": [
+                "https://music.youtube.com/playlist?list=OLAK5uy_lSza7aA85vMKSEiQ0wDr1nkAXpwO80x9Q",
+                "https://music.youtube.com/playlist?list=OLAK5uy_mcL5K5E9IHM5GPQ-8AyzPM7JgQMMn1uhs",
+                "https://music.youtube.com/playlist?list=OLAK5uy_nfd04cpVQ9Xv0UsOTBshL1TU6O2vz-rhg",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lIZirsnSbg41CX1xYgibpRhMlZWOwb1LM",
+                "https://music.youtube.com/playlist?list=OLAK5uy_lLZbgZsZ40ofzOWIN2c3vqKMlhD3FcTxQ",
+                "https://music.youtube.com/playlist?list=OLAK5uy_mXl3Ah_8a1uyn2h7w9qd4EHF4ggjFYWuQ"
+            ]
+        },
+        {
+            "nombre": "Manuel Medrano",
+            "albums": [
+               "https://music.youtube.com/playlist?list=OLAK5uy_nthf97xvAIAkmyzaZ70d8waAdVhqG6qGg",
+               "https://music.youtube.com/playlist?list=OLAK5uy_kJQhCbjejEI9e8m06jCgL6JUTFF_unr3I"
+            ]
+        }
+    ]
+       
+
+}
