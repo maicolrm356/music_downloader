@@ -5,10 +5,19 @@ import openpyxl
 from openpyxl import load_workbook, Workbook
 from openpyxl.utils import get_column_letter
 from mutagen.easyid3 import EasyID3
+import json
 
-excel = "./music.xlsx"
-archivo = load_workbook(excel)
-ruta_base = "C:/Users/maico/Music/music"
+
+data = json.load(open("all_music.json"))
+
+#print(data)
+
+
+#excel = "./music.xlsx"
+#archivo = load_workbook(excel)
+#ruta_base = "C:/Users/maico/Music/music"
+ruta_base = "/home/michael/Música/Music"
+ruta_descarga = "/home/michael/Música/Music"
 albums = []
 
 def crear_carpetas_de_albums(ruta_albums):
@@ -21,10 +30,6 @@ def crear_carpetas_de_albums(ruta_albums):
             print("Error al crear la carpeta del album")
     else: 
         print(f"Ya existe la carpeta del album: {ruta_albums}")
-
-def obtener_artista_excel():
-    nombres_hojas = archivo.sheetnames
-    return nombres_hojas
 
 def obtener_nombre_album(url):
     ydl_opts = {
@@ -47,23 +52,18 @@ def obtener_nombre_album(url):
             return None
 
 def descargar_albums(albums, artista):
-    # path = 'C:/Users/maico/Music/music/Guns N Roses/Appetite For Destruction'
-    # path = f"{ruta_base}/{artista}"
-    
-    
+
     for album in albums:
         nombre_album = obtener_nombre_album(album)
-        if "The Spaghetti Incident" in nombre_album:
-            nombre_album = nombre_album.replace("?", "").strip()
-            
-        if "Guns N' Roses - Live Tokyo Dome | 1992/02/22 | (1080p 60FPS)" in nombre_album:
-            nombre_album = "Live Tokyo Dome  1992"
+
             
             
         path = f"{ruta_base}/{artista}/{nombre_album}"
         if crear_carpetas_de_albums(path):
             ydl_opts = {
-                'ffmpeg_location': r'C:\Users\maico\Downloads\ffmpeg-2025-08-07-git-fa458c7243-essentials_build\ffmpeg-2025-08-07-git-fa458c7243-essentials_build\bin',
+                'ffmpeg_location': r'/usr/bin/ffmpeg',
+
+                #'ffmpeg_location': r'C:\Users\maico\Downloads\ffmpeg-2025-08-07-git-fa458c7243-essentials_build\ffmpeg-2025-08-07-git-fa458c7243-essentials_build\bin',
                 'format': 'bestaudio/best',
                 'outtmpl': f'{path}/%(track)s.%(ext)s',
                 # ℹ︝ See help(yt_dlp.postprocessor) for a list of available Postprocessors and their arguments
@@ -142,4 +142,9 @@ obtener_albums()
 
 ## HACER PRUEBAS DE DESCARGA
 
+for artista in data["artistas"]:
+    print(f"Artista: {artista['nombre']}")
 
+    for link in artista["albums"]:
+        print(f"  - Álbum: {link}")
+        obtener_nombre_album(link)

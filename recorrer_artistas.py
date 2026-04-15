@@ -63,6 +63,12 @@ for artista in data["artistas"]:
                 'format': 'bestaudio/best',
                 'outtmpl': f'{path}/%(track)s.%(ext)s',
                 # ℹ︝ See help(yt_dlp.postprocessor) for a list of available Postprocessors and their arguments
+                #'cookiesfrombrowser': (
+                #        'brave',
+                #        '/home/michael/snap/brave/current/.config/BraveSoftware/Brave-Browser',
+                #        None,
+                #        'Default'
+                #    ),
                 'postprocessors': [
                     {  # Extract audio using ffmpeg
                         'key': 'FFmpegExtractAudio',
@@ -72,13 +78,20 @@ for artista in data["artistas"]:
                         'key': 'FFmpegMetadata',
                     }
                 ],
-                'cookiefile': 'cookies.txt',
-                'js_runtimes': {
-                    'node': {
-                        'path': '/usr/bin/node'
+                
+                #'cookiefile': 'cookies.txt',
+                #'js_runtimes': {
+                 #   'node': {
+                  #      'path': '/usr/bin/node'
+                   # }
+                #},
+
+                'extractor_args': {
+                    'youtube': {
+                        'player_client': ['android']
                     }
                 },
-
+                
                 'remote_components': ['ejs:github'],
                 'retries': 30,             # más intentos
                 'fragment_retries': 30,    # más intentos por fragmento
